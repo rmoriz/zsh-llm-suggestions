@@ -94,7 +94,17 @@ zsh_llm_suggestions_github_copilot_explain() {
   zsh_llm_completion "$SCRIPT_DIR/zsh-llm-suggestions-github-copilot.py" "explain"
 }
 
+zsh_llm_suggestions_openrouter() {
+  zsh_llm_completion "$SCRIPT_DIR/zsh-llm-suggestions-openrouter.py" "generate"
+}
+
+zsh_llm_suggestions_openrouter_explain() {
+  zsh_llm_completion "$SCRIPT_DIR/zsh-llm-suggestions-openrouter.py" "explain"
+}
+
 zle -N zsh_llm_suggestions_openai
 zle -N zsh_llm_suggestions_openai_explain
 zle -N zsh_llm_suggestions_github_copilot
 zle -N zsh_llm_suggestions_github_copilot_explain
+zle -N zsh_llm_suggestions_openrouter
+zle -N zsh_llm_suggestions_openrouter_explain
